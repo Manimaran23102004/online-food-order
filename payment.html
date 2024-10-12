@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment </title>
+</head>
+<body>
+    <style>
+        .container{
+            width: 100%;
+            height: 100%;
+           
+            
+        }
+        .head{
+            padding-left: 15px;
+            
+        
+        }
+        .pay-source{
+            padding-left: 15px;
+        }
+        .pay-source img{
+            width:70px;
+            border-radius: 50%;
+        }
+        .pay-source .pay1{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+        }
+        .pay-source button{
+            color:black ;
+            background-color: white;
+
+            width: 50px;
+            height: 50px;
+            border: none;
+            
+        }
+        button:hover{
+            border-radius: 10px;
+            border: 2px,solid;
+        }
+        .pay1 button{
+            right: 20px;
+
+        }
+    </style>
+    <div class="container">
+   <div class="head">
+     <h2>WALLETS</h2>
+</div>    
+<div class="pay-source">
+    <div class="pay1">
+        <img src="/image/amazon pay.png" alt="Amazon Pay">
+        <p>Amazon-Pay</p>
+        <p></p>
+        <button id="payButton3" type="submit">Pay</button>
+    </div>
+   <div class="pay1">
+    <img src="/image/gpay2.jpg" alt="GPay">
+    <p>GPay</p>
+    <p></p>
+    <button id="payButton" type="submit">Pay</button>
+   </div>
+   <div class="pay1">
+    <img src="/image/phone pay.jpg" alt="Phone Pay">
+    <p>PhonePay</p>
+    <p></p>
+    <button id="payButton2" type="submit">Pay</button>
+   </div>
+  
+
+</div>
+   
+    </div>
+
+  <script>
+    document.getElementById("payButton").addEventListener("click", function() {
+      // Redirect to Google Pay URL or handle payment logic
+      window.location.href = "https://pay.google.com/gp/p/ui/pay";
+    });
+    document.getElementById('payButton2').addEventListener('click',function(){
+        window.location.href = "https://www.phonepe.com/";
+
+
+    })
+    document.getElementById('payButton3').addEventListener('click',function(){
+        window.location.href = "https://www.amazon.in/amazonpay/home";
+
+
+    })
+  </script>
+</body>
+</html>

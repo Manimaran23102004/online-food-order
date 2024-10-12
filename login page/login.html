@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In Page</title>
+</head>
+<body>
+    <style>
+   body{
+    display: flex;
+    background-image: linear-gradient(rgb(226, 131, 14), rgb(255, 255, 255));
+ 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   }
+   .container{
+    border: 2px,solid;
+    width: max-content;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: auto;    
+
+   }
+   input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    margin: 5px;
+   }
+   button{
+    padding: 5px;
+
+   }
+   .verify{
+    display: none;
+   }
+   
+    </style>
+    <form action="">
+        <div class="container">
+            <h1>Sign In Here</h1>
+            <div class="number">
+                <input type="email" id="mail" name="number" placeholder="Enter Email Id">
+            </div>
+            <div class="verify">
+                <input type="number" name="number" id="otp-verify" placeholder="Enter OTP">
+                <button  id="otp-btn">Verify</button>
+            </div>
+            <button id="log-submit" onclick="sendotp()" type="submit">Log In</button>
+        </div>
+    </form>
+    <script src="https://smtpjs.com/v3/smtp.js">
+        function sendotp(){
+            let email=document.getElementById('mail').value;
+            let verify=document.getElementsByClassName('verify')[0];
+        let otp_val=Math.floor(Math.random()*10000)
+        let emailbody=`<h1>Your OTP in this Mail ${otp_val}`
+            Email.send({
+            SecureToken : "  060ac03e-df12-459e-9846-9b5db79284ec",
+            To : email,
+            From : "manimaranganeshkumar@gmail.com",
+            Subject : "This is the subject",
+            Body :emailbody,
+        }).then(
+          message => {
+            if(message === 'ok'){
+                alert('OTP is send to your email ',email.value);
+                verify.style.display='flex';
+
+                let otp_verify=document.getElementById('otp-verify');
+                let otp_btn=document.getElementById('otp-btn');
+
+                otp_btn.addEventListener('click',()=>{
+                        if(otp_val == otp_verify.value){
+                            alert('otp checked')
+                        }
+                        else{
+                            alert('incorrect OTP')
+                        }
+                })
+            }
+          }
+        )};
+
+    </script>
+</body>
+</html>

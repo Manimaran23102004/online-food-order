@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link id="icon1" rel="icon" href="food order.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Online Food Order</title>
+</head>
+<body>
+    <style>
+        #log-in{
+            width: max-content;
+            height: max-content;
+            padding: 10px;
+            color: white;
+            background-color: black;
+            border-radius: 8px;
+            margin-top: 20px;
+            margin-right: 20px;
+            border: none;
+        }
+    </style>
+    <form action="">
+        <div class="container">
+            <div class="main">
+                <img id="logo" src="/image/food order.jpg" alt="Shop Logo">
+                <h1>Online Food Order</h1>
+                <button onclick="LogIn()"  id="log-in"><i class="fa-solid fa-right-to-bracket"> </i>  Log-In </button>
+                
+            </div>   
+            <div id="head">
+                <button class="btn"><i class="fa-solid fa-house"></i> <a href="index.html">Home</a></button>
+                <button class="btn"><i class="fa-solid fa-phone"></i><a href="/contact details/contact.html">Contact</a></button>
+                <button class="btn"><i class="fa-solid fa-location-dot"></i><a href="/location/location.html">Location</a></button>
+                <button class="btn"><i class="fa-solid fa-address-card"></i><a href="/about/about.html">About Us</a></button>
+            </div> 
+            <marquee id="run-menu" behavior="" direction="">
+                <div id="run">
+                    Idly - Doda- Veg Noodles -Veg Fried Rice- Egg Fried Rice-  Pongal -Masala Dosai- Uthappam- Onion Uthappam Dosai- Coffee -Tea -Milk- Curd Rice- Chicken Soup- Sweet Corn Chicken Soup- Hot & Sour Non Veg Soup
+                </div>
+            </marquee>
+                        <!-- search bar -->
+            <div id="search">
+                <button type="search" id="search-btn"><i id="search-icon" class="fa-solid fa-magnifying-glass"></i></button>
+                <input id="search-input" type="search" placeholder="Search">
+                <!-- GIVE SEARCH LIST USING THE        DETAIL TAG       -->
+            </div>
+
+                <!-- menu  -->
+            <div class="menu">
+                <div class="choose">
+                    <img  src="/image/chicken logo.jpg" alt="Chicken">
+                    <li id="menu1"><a href="chicken.html">Chicken</a></li>
+    
+                </div>
+                <div class="choose">
+                    <img src="/image/tea logo.jpg" alt="Tea">
+                    <li id="menu2"><a href="tea.html">Tea</a></li>
+    
+                </div>
+
+<div class="choose">
+    <img src="/image/chinese logo.jpg" alt="Chinese">
+    <li id="menu3"><a href="chinese.html">Chinese</a></li>
+
+</div>
+                <div class="choose">
+                    <img src="/image/sandwich logo.jpg" alt="Sandwich">
+                    <li id="menu4"><a href="sandwich.html">Sandwich</a></li>
+    
+                </div>
+               <div class="choose"> <img src="/image/burger logo.jpg" alt="Burger">
+                <li id="menu5"><a href="burger.html">Burger</a></li>
+</div>
+               <div class="choose">
+                <img src="/image/rolls logo.jpg" alt="Rolls">
+                <li id="menu6"><a href="rolls.html">Rolls</a></li>
+
+               </div>
+                <div class="choose">
+                    <img src="/image/ice logo.jpg" alt="Ice Cream">
+                    <li id="menu7"><a href="icecream.html">Ice Cream</a> </li>
+    
+                </div>
+                <div class="choose">
+                    <img src="/image/pizza logo.jpg" alt="Pizza">
+                    <li id="menu8"><a href="pizza.html">Pizza</a></li>
+    
+                </div>
+                <div class="choose">
+                    <img src="/image/dessert logo.jpg" alt="Dessert">
+                    <li id="menu9"><a href="dessert.html">Dessert</a></li>
+    
+                </div>
+                
+            </div>
+
+<div class="Break-Fast"><h1> Veg Break Fast</h1></div>
+            <div class="image">
+                <div class="image">
+                    
+                    <img src="/image/idly.jpg" alt="Idly" ><b class="name">Idly 
+                        ₹15.00</b>
+                    <input  id="input" type="number" placeholder="Add">
+                    <button type="submit" class="order"><a href="/order page/order.html">Order</a></button>
+                   
+                </div>
+                    <div class="image">
+                        <img src="/image/dosa.jpg" alt="Dosa"><b class="name">Dosa ₹40.00</b>
+                        <input id="input" type="number" placeholder="Add">
+                        <button type="submit" class="order"><a href="/order page/order.html">Order</a></button>
+                    </div>
+                <div class="image">
+                    <img src="/image/ven pongal.jpg" alt="Ven Pongal"><b class="name"> Ven Pongal ₹30.00</b>
+                    <input id="input" type="number" placeholder="Add">
+                        <button type="submit" class="order"><a href="/order page/order.html">Order</a></button>
+                   
+                </div>
+               <div class="image">
+                <img src="/image/puri.jpg" alt="Puri"><b class="name"> Puri ₹60.00</b>
+              <input id="input" type="number" placeholder="Add">
+                <button type="submit" class="order"><a href="/order page/order.html">Order</a></button> 
+               </div>
+               <div class="image">
+                <img src="/image/vada.jpg" alt="vada"><b class="name">Vada ₹8.00</b>
+              <input id="input" type="number" placeholder="Add">
+                <button type="submit" class="order"><a href="/order page/order.html">Order</a></button> 
+               </div>
+
+                        <!-- lunch -->
+<br>
+               <div class="Break-Fast"><h1>Veg Lunch</h1></div>
+                <div class="image">
+                <div class="image">
+                    
+                    <img src="/image/Curd_Rice.jpg" alt="Curd Rice" ><b class="name">Curd Rice 
+                        ₹70.00</b>
+                    <input  id="input" type="number" placeholder="Add">
+                    <button type="submit" class="order"><a href="/order page/order.html">Order</a></button>
+                   
+                </div>
+                    <div class="image">
+                        <img src="/image/meals2.jpg" alt="Meals"><b class="name">Meals ₹120.00</b>
+                        <input id="input" type="number" placeholder="Add">
+                        <button type="submit" class="order"><a href="/order page/order.html">Order</a></button>
+                    </div>
+                <div class="image">
+                    <img src="/image/tomato-Rice.jpg" alt="Tomato Rice"><b class="name"> Tomato Rice ₹100.00</b>
+                    <input id="input" type="number" placeholder="Add">
+                        <button type="submit" class="order"><a href="/order page/order.html">Order</a></button>
+                   
+                </div>
+               <div class="image">
+                <img src="/image/Lemon Rice.jpg" alt="Lemon Rice"><b class="name"> Lemon Rice ₹90.00</b>
+              <input id="input" type="number" placeholder="Add">
+                <button type="submit" class="order"><a href="/order page/order.html">Order</a></button> 
+               </div>
+               <div class="image">
+                <img src="/image/coconut rice.jpg" alt="Coconut Rice"><b class="name">Coconut Rice ₹120.00</b>
+              <input id="input" type="number" placeholder="Add">
+                <button type="submit" class="order"><a href="/order page/order.html">Order</a></button> 
+               </div>
+            </div>
+    </form>
+    
+   
+    <script>
+    let log=document.getElementById('log-in');
+
+    function LogIn(){
+            window.open('/login page/login.html','_blank');
+           
+
+        }
+    </script>
+</body>
+</html>

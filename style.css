@@ -1,0 +1,191 @@
+ body{
+   margin: 0%;  
+ }
+ #head a{
+   text-decoration: none;
+   color: black;
+ }
+ .container{
+   width: 100%;
+   height: 50vh;
+   background-image: linear-gradient(rgb(226, 131, 14), rgb(255, 255, 255));
+ } 
+ #logo{
+   margin-top: 15px;
+   margin-left: 20px;
+   width: 200px;
+   border-radius: 100%;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+ }
+ .main{
+  
+   display: flex;
+ }
+.main h1{
+   font-size: 50px;
+   margin-left: 20px;
+   margin-top: 95px;
+}
+.btn{
+   background-color: orange;
+   padding: 10px;
+   border-radius: 10px;
+   border: none;
+   margin-top: 25px;
+   margin-left: 50px;
+   
+}
+button:hover{
+   transform: scale(1.1);
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+#run-menu{
+   margin-top: 20px;
+
+
+}
+#run{
+   font-size: x-large;
+}
+.Break-Fast{
+   margin-top: 40px;
+   text-align: center;
+   color: rgb(0, 0, 0);
+}
+.name{
+   font-size: larger;
+   margin-bottom: 50px;
+}
+.image{
+   border: 2px,solid,black;
+   display: inline-block;
+   position: relative;
+   width: 100%;
+   margin-top: 10px;
+   margin-left: 10px;
+   border: none;
+   border-radius: 8px;
+   /* display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+   gap:1.5rem;
+   justify-content: center;
+   align-content: center; */
+}
+.image img{
+ 
+   margin-top: 50px;
+   margin-right: 20px;
+   margin-left: 80px;
+    width: 200px;
+    border-radius: 10px;
+}
+.order{
+   
+   display: flex;
+   position: relative;
+   margin-top: -20px;
+   margin-bottom: 15px;
+   margin-left: 145px;
+   border: none;
+   border-radius: 8px;
+   font-size: x-large;
+   
+   background-image: linear-gradient(rgb(231, 236, 153), rgb(253, 167, 47));
+
+}
+.image a{
+   text-decoration: none;
+   color: black;
+}
+.image img:hover{
+   transform: scale(1.1);
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+ 
+       /* ..........search design.......... */
+
+#input{
+   border: none;
+   position: absolute;
+   top:100px ;
+    right: 120px;
+    width: 50px;
+    border-radius: 9px;
+    padding:5px 5px 5px 5px;
+    font-size: large;
+    background-color: rgb(246, 185, 71);
+}
+
+#search{
+   margin-left:80px ;
+   margin-top: 30px;
+   background-color: rgb(254, 182, 93);
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+   border-radius: 40px;
+   width: 350px
+}
+#search input{
+   margin-left: 5px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   font-size: large;
+   background-color: rgb(254, 182, 93);
+   border: none;
+   outline: none;
+   
+}
+#search-btn{
+   margin-left: 10px;
+   border: none;
+   border-radius: 50%;
+   background-color:rgb(254, 182, 93);
+
+}
+ #search-icon{
+   margin-left:15px ;
+ }
+ #search:hover{
+   transform: scale(1.1);
+ }
+.menu img{
+   width: 70px;
+   height: 70px;
+   margin-left: 20px;
+   border-radius: 50%;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.menu a{
+   text-decoration: none;
+   color: black;
+   
+}
+.menu li{
+   list-style: none;
+   
+
+}
+
+.choose li,a{
+ 
+   display: inline-block;
+
+  }
+  .menu div{
+   margin-top: 40px;
+display: inline-block;
+margin-left: 30px;
+  }
+  .menu a{
+   
+    margin-left: -60px;
+    
+  }
+  .menu img{
+   margin-bottom: 15px;
+  }
+  #menu2,#menu8,#menu6{
+   margin-left:9px;
+  }
+#menu4,#menu1,#menu7,#menu9{
+   margin-right: -19px;
+}
